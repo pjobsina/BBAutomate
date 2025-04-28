@@ -30,7 +30,7 @@ It handles installation, environment setup, and ensures that your machine is rea
 ## ⚡ Usage
 
 ```bash
-git clone https://github.com/yourusername/BBAutomate.git
+git clone https://github.com/pjobsina/BBAutomate.git
 cd BBAutomate
 chmod +x bbautomate.sh
 ./bbautomate.sh
