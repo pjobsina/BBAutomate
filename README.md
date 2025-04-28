@@ -59,4 +59,4 @@ source ~/.zshrc
 ---
 
 ## 💜 Credits
-Created by [pjobsina] - Contributions are welcome!
+Created by [pjobsina](https://github.com/pjobsina) - Contributions are welcome!
