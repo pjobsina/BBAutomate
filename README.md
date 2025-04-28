@@ -20,6 +20,7 @@ It handles installation, environment setup, and ensures that your machine is rea
   - [gospider](https://github.com/jaeles-project/gospider)
   - [subjs](https://github.com/lc/subjs)
   - [waybackurls](https://github.com/tomnomnom/waybackurls)
+  - [subzy](https://github.com/LukaSikic/subzy)
 - **APT package installation** for Python-based tools:
   - [sublist3r](https://github.com/aboul3la/Sublist3r)
   - [arjun](https://github.com/s0md3v/Arjun)
@@ -30,7 +31,7 @@ It handles installation, environment setup, and ensures that your machine is rea
 ## ⚡ Usage
 
 ```bash
-git clone https://github.com/pjobsina/BBAutomate.git
+git clone https://github.com/yourusername/BBAutomate.git
 cd BBAutomate
 chmod +x bbautomate.sh
 ./bbautomate.sh
@@ -59,4 +60,4 @@ source ~/.zshrc
 ---
 
 ## 💜 Credits
-Created by [pjobsina](https://github.com/pjobsina) - Contributions are welcome!
+Created by [Your Name or Username] - Contributions are welcome!
