@@ -52,6 +52,7 @@ install_go_tool katana github.com/projectdiscovery/katana/cmd/katana
 install_go_tool gospider github.com/jaeles-project/gospider
 install_go_tool subjs github.com/lc/subjs
 install_go_tool waybackurls github.com/tomnomnom/waybackurls
+install_go_tool subzy github.com/LukaSikic/subzy
 
 # ========== 4. Install Python Tools via apt ==========
 echo "[*] Installing Python-based tools via apt..."
@@ -60,7 +61,7 @@ sudo apt-get install -y sublist3r arjun dirsearch
 
 # ========== 5. Summary ==========
 echo "[+] Installation complete. Tools checked/installed:"
-echo "  - subfinder, httpx, gau, anew, gf, katana, gospider, subjs, waybackurls"
+echo "  - subfinder, httpx, gau, anew, gf, katana, gospider, subjs, waybackurls, subzy"
 echo "  - sublist3r, arjun, dirsearch (via apt)"
 echo
 echo "[*] Make sure your PATH is set. Run this to apply it now:"
