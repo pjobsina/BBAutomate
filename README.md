@@ -1,4 +1,4 @@
-# BBAutomate
+# BBInstallAutomate
 
 **Bug Bounty Tool Installation Automation for Linux and Kali Linux**
 
