@@ -42,7 +42,14 @@ After running, apply the environment changes:
 ```bash
 source ~/.zshrc
 ```
-
+## GO Update
+Change the GO version if needed:
+```bash
+# ========== 1. Install Go ==========
+GO_VERSION="1.24.2" # GO Version Installed
+GO_TAR="go${GO_VERSION}.linux-amd64.tar.gz"
+GO_URL="https://go.dev/dl/${GO_TAR}"
+```
 ---
 
 ## 📋 Notes
