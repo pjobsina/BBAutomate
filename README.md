@@ -2,7 +2,7 @@
 
 **Bug Bounty Tool Installation Automation for Linux and Kali Linux**
 
-BBAutomate is a simple automation script designed to quickly set up essential bug bounty and reconnaissance tools on Linux systems, especially Kali Linux.
+BBInstallAutomate is a simple automation script designed to quickly set up essential bug bounty and reconnaissance tools on Linux systems, especially Kali Linux.
 It handles installation, environment setup, and ensures that your machine is ready for hacking and recon in minutes.
 
 ---
