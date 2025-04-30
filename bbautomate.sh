@@ -5,15 +5,15 @@ GO_VERSION="1.24.2"
 GO_TAR="go${GO_VERSION}.linux-amd64.tar.gz"
 GO_URL="https://go.dev/dl/${GO_TAR}"
 
-if ! command -v go >/dev/null 2>&1; then
-    echo "[*] Downloading and installing Go ${GO_VERSION}..."
+# Check if correct Go version is already installed at /usr/local/go/bin/go
+if [ -x "/usr/local/go/bin/go" ] && [[ "$(/usr/local/go/bin/go version | awk '{print $3}')" == "go${GO_VERSION}" ]]; then
+    echo "[*] Go ${GO_VERSION} is already installed in /usr/local/go — skipping installation."
+else
+    echo "[*] Installing Go ${GO_VERSION} to /usr/local/go..."
     wget "${GO_URL}" -O "${GO_TAR}" || { echo "Download failed!"; exit 1; }
     sudo rm -rf /usr/local/go
     sudo tar -C /usr/local -xzf "${GO_TAR}"
     rm -f "${GO_TAR}"
-else
-    echo "[*] Go is already installed:"
-    go version
 fi
 
 # ========== 2. Set up PATHs in .zshrc ==========
@@ -52,7 +52,8 @@ install_go_tool katana github.com/projectdiscovery/katana/cmd/katana
 install_go_tool gospider github.com/jaeles-project/gospider
 install_go_tool subjs github.com/lc/subjs
 install_go_tool waybackurls github.com/tomnomnom/waybackurls
-install_go_tool subzy github.com/LukaSikic/subzy
+install_go_tool subzy github.com/PentestPad/subzy
+install_go_tool mapcidr github.com/projectdiscovery/mapcidr/cmd/mapcidr
 
 # ========== 4. Install Python Tools via apt ==========
 echo "[*] Installing Python-based tools via apt..."
@@ -61,7 +62,7 @@ sudo apt-get install -y sublist3r arjun dirsearch
 
 # ========== 5. Summary ==========
 echo "[+] Installation complete. Tools checked/installed:"
-echo "  - subfinder, httpx, gau, anew, gf, katana, gospider, subjs, waybackurls, subzy"
+echo "  - subfinder, httpx, gau, anew, gf, katana, gospider, subjs, waybackurls, subzy, mapcidr"
 echo "  - sublist3r, arjun, dirsearch (via apt)"
 echo
 echo "[*] Make sure your PATH is set. Run this to apply it now:"
